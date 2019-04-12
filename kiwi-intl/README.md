@@ -6,16 +6,16 @@
 
 > yarn add kiwi-intl
 
-> 推荐与[🐤 Kiwi-国际化全流程解决方案](https://github.com/nefe/kiwi)结合使用
+> 推荐与[🐤 Kiwi-国际化全流程解决方案](https://github.com/alibaba/kiwi)结合使用
 
 ## 使用 API
 
 初始化国际化框架
 
 ```javascript
-import IntlFormat from 'kiwi-intl';
+import KiwiIntl from 'kiwi-intl';
 
-const intlFormat = IntlFormat.init('en-UK', {
+const kiwiIntl = KiwiIntl.init('en-UK', {
   'en-UK': {
     test: 'testvalue',
     testTemplate: 'you have {value} unread message',
@@ -28,23 +28,23 @@ const intlFormat = IntlFormat.init('en-UK', {
 });
 ```
 
-在组件中直接使用，支持模板, 单复数。同时支持 `intlFormat.test`,直接取对应 Key 值。
+在组件中直接使用，支持模板, 单复数。同时支持 `kiwiIntl.test`,直接取对应 Key 值。
 
 ```javascript
 
-intlFormat.test; // testvalue;
+kiwiIntl.test; // testvalue;
 
-intlFormat.get('test'); // testvalue;
+kiwiIntl.get('test'); // testvalue;
 
-intlFormat.get('testTemplate', {
+kiwiIntl.get('testTemplate', {
   value: three
 }); // 值是 'you have three unread message'
 
-intlFormat.template(intlFormat.testTemplate, {
+kiwiIntl.template(kiwiIntl.testTemplate, {
   value: three
 }); // 值是 'you have three unread message'
 
-intlFormat.get('photo', {
+kiwiIntl.get('photo', {
   num: 0
 }); // 值是 'You have no photos.'
 ```
@@ -52,9 +52,19 @@ intlFormat.get('photo', {
 切换语言
 
 ```javascript
-intlFormat.setLang('zh-cn'); // 切换到中文语言
+kiwiIntl.setLang('zh-CN'); // 切换到中文语言
 ```
+## 语言编码
+【强制】区别不同语言的 language tag 遵循 [BCP47](https://en.wikipedia.org/wiki/IETF_language_tag) 规范。
 
-### License
+根据目前的国际业务情况，不同地区的同种语言在同一地区不会同使用两种写法。比如新加坡只使用是简体中文，台湾和香港只使用繁体中文，所以我们约定在 BCP 47规范中，仅使用 language-region  的组合方式。
+
+正例：zh-CN
+
+反例：~~zh、zh_hans、zh-cn~~
+
+
+
+## License
 
 MIT

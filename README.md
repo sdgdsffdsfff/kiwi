@@ -5,7 +5,7 @@
 
 ## 如何使用
 
-> yarn add kiwi-intl kiwi-clis
+> yarn global add kiwi-clis && yarn add kiwi-intl
 
 > VS Code 插件搜索 kiwi linter 安装
 
@@ -23,11 +23,11 @@
 ## 使用文档及 API
 可以到对应子目录中查看：
 
-`kiwi-intl`: [📝 文档链接](https://github.com/nefe/kiwi/tree/master/kiwi-intl)
+`kiwi-intl`: [📝 文档链接](https://github.com/alibaba/kiwi/tree/master/kiwi-intl)
 
-`kiwi-cli`: [📝 文档链接](https://github.com/nefe/kiwi/tree/master/kiwi-cli)
+`kiwi-cli`: [📝 文档链接](https://github.com/alibaba/kiwi/tree/master/kiwi-cli)
 
-`kiwi-linter`: [📝 文档链接](https://github.com/nefe/kiwi/tree/master/kiwi-linter)
+`kiwi-linter`: [📝 文档链接](https://github.com/alibaba/kiwi/tree/master/kiwi-linter)
 
 ## 为什么使用 kiwi？
 
@@ -66,6 +66,10 @@ kiwi 还提供了对应 TsLint 的插件，使用 TsLint 在开发过程中实�
 
 ## 为什么叫 kiwi？
 kiwi 是一种不会飞翔的鸟类🐤，但它善于奔跑，时速可达10英里，它的鼻孔长在喙部的最尖端，具有奇特的嗅觉功能，可以找到距地面7英寸土层下的小虫。kiwi 这个项目也能帮你找到项目国际化过程中的小虫。
+
+## 钉钉用户群
+
+<img src="https://img.alicdn.com/tfs/TB1SKKfNjTpK1RjSZKPXXa3UpXa-1242-1602.jpg" height="300">
 
 ## License
 MIT

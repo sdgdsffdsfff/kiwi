@@ -9,16 +9,18 @@
   ],
   "scripts": {
     "watch": "cd kiwi-linter && npm run watch",
-    "publish-linter": "cd kiwi-linter && vsce publish"
+    "publish-linter": "cd kiwi-linter && vsce publish",
+    "precommit": "node ./scripts/prettier.js && git add .",
+    "prettier": "node ./scripts/prettier.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nefe/kiwi.git"
+    "url": "git+https://github.com/alibaba/kiwi.git"
   },
   "author": "linhuiw",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nefe/kiwi/issues"
+    "url": "https://github.com/alibaba/kiwi/issues"
   },
-  "homepage": "https://github.com/nefe/kiwi#readme"
+  "homepage": "https://github.com/alibaba/kiwi#readme"
 }

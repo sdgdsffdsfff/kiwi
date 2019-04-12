@@ -1,19 +1,25 @@
 {
   "name": "kiwi-intl",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "description": "I18N tools for universal javascrit apps, easy use & better api;",
   "main": "built/src/index.js",
   "types": "built/src/index.d.ts",
   "author": "linhuiw",
-  "keywords": ["I18N", "intl", "react", "G11N", "L10N"],
+  "keywords": [
+    "I18N",
+    "intl",
+    "react",
+    "G11N",
+    "L10N"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nefe/kiwi.git"
+    "url": "https://github.com/alibaba/kiwi.git"
   },
   "bugs": {
-    "url": "https://github.com/nefe/kiwi/issues"
+    "url": "https://github.com/alibaba/kiwi/issues"
   },
-  "homepage": "https://github.com/nefe/kiwi",
+  "homepage": "https://github.com/alibaba/kiwi",
   "scripts": {
     "lint": "tslint src",
     "autofix": "tslint src --fix",
@@ -24,7 +30,8 @@
   },
   "dependencies": {
     "intl-messageformat": "^2.2.0",
-    "lodash.get": "^4.4.2"
+    "lodash.get": "^4.4.2",
+    "webpack-dev-server": "2.9.1"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.42",
@@ -34,9 +41,10 @@
     "ts-loader": "^2.3.0",
     "ts-node": "^3.3.0",
     "tslint": "^5.5.0",
+    "typescript": "^2.4.2",
     "webpack": "^3.3.0",
-    "webpack-dev-server": "^3.1.11",
-    "typescript": "^2.4.2"
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "2.9.1"
   },
   "license": "MIT"
 }
